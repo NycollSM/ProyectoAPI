@@ -1,19 +1,17 @@
+const mainContent = document.getElementById('main-container');
 const content = document.getElementById('container');
-const searching = document.getElementById('search');
+const searching = document.querySelector('button');
 const txt = document.getElementById('txt');
 
+
 function contentApi(){
-    if (txt !== ''){
-    var newTxt = txt.value;
-    var paragraph = document.createElement('p'); 
-    paragraph.innerHTML += newTxt;
-    content.appendChild(parragrah); 
-    } 
-    else{
-        console.log('error');
-    }
+        let a = document.createElement('p');
+        a.innerHTML += txt.value;
+        content.appendChild(a);
+        console.log(txt.innerHTML);
+        txt.value = '';
 }
-searching.addEventListener('submit', contentApi);
+searching.addEventListener('click', contentApi);
 
 
 
