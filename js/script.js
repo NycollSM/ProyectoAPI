@@ -9,32 +9,29 @@ const request = new XMLHttpRequest();
 function imagesAPI (event){
   const response = event.target.response;
   console.log(response);
-
   for (const i of response.results){
     const list = document.getElementById('list');
-    const listImage = document.createElement('li');
-    listImage.innerHTML = i.image;
-    list.appendChild(listImage);
-    const images = document.createElement('img');
-    images.setAttribute = ('src', i.image);
-    listImage.appendChild(images);
-    console.log(images);
+    const liImage = document.createElement('li');
+    const imagesResponse = document.createElement('img');
+    imagesResponse.setAttribute = ('src', response.results[0].image);
+    console.log(imagesResponse);
+    list.appendChild(liImage);
   }
-}
+}console.log(imagesAPI);
 request.addEventListener('load', imagesAPI);
-console.log(imagesAPI);
+
 
 // buscador
-function contentApi(){
-        let a = document.createElement('p');
-        a.innerHTML += txt.value;
-        content.appendChild(a);
-        console.log(txt.innerHTML);
-        txt.value = '';
-}
-//searching.addEventListener('click', obtenerDatos);
+// function contentApi(){
+//        let a = document.createElement('p');
+//       a.innerHTML += txt.value;
+//        content.appendChild(a);
+//        console.log(txt.innerHTML);
+//        txt.value = '';
+// }
+// searching.addEventListener('click', obtenerDatos);
 
 // respuesta tipo json 
 request.responseType = 'json';
-request.open('GET', 'https://rickandmortyapi.com/api/character');
+request.open('GET', "https://rickandmortyapi.com/api/character/");
 request.send();

@@ -1,0 +1,64 @@
+body{
+   background-image: url('../images/portal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Modalz Tall;
+    background-attachment: fixed;
+    color: #4fe319;
+}
+#main-container{
+    width: 1200px;
+    padding: 0 2%;
+    position: relative;
+}
+.header{
+    margin: 0 auto;
+    text-align: center;
+
+}
+.header img{
+    padding-left: 20%;
+    height: 150px;
+    text-align: center;
+}
+.searcher{
+    padding: 2% 0;
+    float: right;
+}
+input{
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #4fe319;
+    border-radius: 8px;
+    color: #4fe319;
+}
+#search{
+    background: transparent;
+    border: 1px solid #4fe319;
+    border-radius: 8px;
+    padding: 5px;
+    color: #4fe319;
+    &:hover{
+        background: #4fe319;
+        color: black;
+    }
+}
+li{
+    margin: 0 auto;
+   width: 250px;
+   margin: 10px;
+    text-align: center;
+    float: left;
+    border: #4fe319 1px solid;
+    padding: 15px;
+}
+li > img{
+    height: 200px;
+}
+li > img:hover{
+        li > p{
+            display: block;
+            text-align: center;
+        }
+    }
+
