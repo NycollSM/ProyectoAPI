@@ -1,6 +1,6 @@
 
 const content = document.getElementById('container');
-// const searching = document.querySelector('button');
+// const searching = document.querySelector('button')
 const txt = document.getElementById('txt');
 
 const request = new XMLHttpRequest();
@@ -18,16 +18,6 @@ function imagesAPI(event) {
   }
 }
 request.addEventListener('load', imagesAPI);
-
-// buscador
-// function contentApi(){
-//        let a = document.createElement('p');
-//       a.innerHTML += txt.value;
-//        content.appendChild(a);
-//        console.log(txt.innerHTML);
-//        txt.value = '';
-// }
-// searching.addEventListener('click', obtenerDatos);
 
 // respuesta tipo json
 request.responseType = 'json';
