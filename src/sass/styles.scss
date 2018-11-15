@@ -17,11 +17,18 @@ body{
 
 }
 .header img{
-    padding-left: 20%;
     height: 150px;
-    text-align: center;
+    margin: 0 auto;
 }
-.searcher{
+#container{
+    margin: 0 auto;
+}
+#container img {
+    padding: 10px;
+    width: 150px;
+    float: left;
+}
+/**.searcher{
     padding: 2% 0;
     float: right;
 }
@@ -43,22 +50,4 @@ input{
         color: black;
     }
 }
-li{
-    margin: 0 auto;
-   width: 250px;
-   margin: 10px;
-    text-align: center;
-    float: left;
-    border: #4fe319 1px solid;
-    padding: 15px;
-}
-li > img{
-    height: 200px;
-}
-li > img:hover{
-        li > p{
-            display: block;
-            text-align: center;
-        }
-    }
-
+*/
