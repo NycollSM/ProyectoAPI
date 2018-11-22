@@ -22,33 +22,15 @@ body {
 #container {
   margin: 0 auto; }
 
-#container img {
+#characters {
+  width: 15%;
+  float: left;
+  margin: 3%;
+  margin: 0 auto; }
+
+#characters img {
   padding: 10px;
   width: 150px;
   float: left; }
-
-/**.searcher{
-    padding: 2% 0;
-    float: right;
-}
-input{
-    padding: 5px;
-    background: transparent;
-    border: 1px solid #4fe319;
-    border-radius: 8px;
-    color: #4fe319;
-}
-#search{
-    background: transparent;
-    border: 1px solid #4fe319;
-    border-radius: 8px;
-    padding: 5px;
-    color: #4fe319;
-    &:hover{
-        background: #4fe319;
-        color: black;
-    }
-}
-*/
 
 /*# sourceMappingURL=styles.css.map */
